@@ -12,6 +12,7 @@ class CarreraController extends Controller
      * @OA\Get(
      *     path="/api/carreras",
      *     summary="Get list of carreras",
+     *     tags={"carreras"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -35,6 +36,7 @@ class CarreraController extends Controller
      * @OA\Post(
      *     path="/api/carreras",
      *     summary="Create a new carrera",
+     *      tags={"carreras"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -61,6 +63,7 @@ class CarreraController extends Controller
      * @OA\Get(
      *     path="/api/carreras/{id}",
      *     summary="Get carrera by ID",
+     *      tags={"carreras"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -90,6 +93,7 @@ class CarreraController extends Controller
      * @OA\Put(
      *     path="/api/carreras/{id}",
      *     summary="Update carrera by ID",
+     *      tags={"carreras"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -123,6 +127,7 @@ class CarreraController extends Controller
      * @OA\Delete(
      *     path="/api/carreras/{id}",
      *     summary="Delete carrera by ID",
+     *      tags={"carreras"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

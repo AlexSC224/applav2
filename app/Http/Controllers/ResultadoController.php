@@ -12,6 +12,7 @@ class ResultadoController extends Controller
      * @OA\Get(
      *     path="/api/resultados",
      *     summary="Get list of resultados",
+     *       tags={"resultados"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -35,6 +36,7 @@ class ResultadoController extends Controller
      * @OA\Post(
      *     path="/api/resultados",
      *     summary="Create a new resultado",
+     *      tags={"resultados"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -63,6 +65,7 @@ class ResultadoController extends Controller
      * @OA\Get(
      *     path="/api/resultados/{id}",
      *     summary="Get resultado by ID",
+     *      tags={"resultados"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -96,6 +99,7 @@ class ResultadoController extends Controller
      * @OA\Put(
      *     path="/api/resultados/{id}",
      *     summary="Update an existing resultado",
+     *      tags={"resultados"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -135,6 +139,7 @@ class ResultadoController extends Controller
      * @OA\Delete(
      *     path="/api/resultados/{id}",
      *     summary="Delete a resultado",
+     *      tags={"resultados"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

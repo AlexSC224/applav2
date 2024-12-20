@@ -12,6 +12,7 @@ class HistorialDeCambioController extends Controller
      * @OA\Get(
      *     path="/api/historial-de-cambios",
      *     summary="Get list of historial de cambios",
+     *      tags={"historial de cambios"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -35,6 +36,7 @@ class HistorialDeCambioController extends Controller
      * @OA\Post(
      *     path="/api/historial-de-cambios",
      *     summary="Create a new historial de cambio",
+     *      tags={"historial de cambios"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -62,6 +64,7 @@ class HistorialDeCambioController extends Controller
      * @OA\Get(
      *     path="/api/historial-de-cambios/{id}",
      *     summary="Get historial de cambio by ID",
+     *      tags={"historial de cambios"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -91,6 +94,7 @@ class HistorialDeCambioController extends Controller
      * @OA\Put(
      *     path="/api/historial-de-cambios/{id}",
      *     summary="Update historial de cambio by ID",
+     *      tags={"historial de cambios"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -125,6 +129,7 @@ class HistorialDeCambioController extends Controller
      * @OA\Delete(
      *     path="/api/historial-de-cambios/{id}",
      *     summary="Delete historial de cambio by ID",
+     *      tags={"historial de cambios"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

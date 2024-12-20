@@ -4,136 +4,86 @@ namespace App\Http\Controllers;
 
 use App\Models\Constructor;
 use Illuminate\Http\Request;
-
+use Illuminate\Database\Eloquent\ModelNotFoundException;
+use Illuminate\Validation\ValidationException;
+use Illuminate\Support\Facades\Log;
 
 class ConstructorController extends Controller
 {
-    /**
-     * @OA\Get(
-     *     path="/api/constructores",
-     *     summary="Get list of constructores",
-     *     @OA\Response(
-     *         response=200,
-     *         description="Successful operation"
-     *     )
-     * )
-     */
     public function index()
     {
-        return Constructor::all();
+        try {
+            $constructores = Constructor::all();
+            return response()->json($constructores, 200);
+        } catch (\Exception $e) {
+            Log::error('Error fetching constructors: ' . $e->getMessage());
+            return response()->json(['error' => 'Error fetching constructors'], 500);
+        }
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
-    public function create()
-    {
-        //
-    }
-
-    /**
-     * @OA\Post(
-     *     path="/api/constructores",
-     *     summary="Create a new constructor",
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             required={"Nombre", "Pais"},
-     *             @OA\Property(property="Nombre", type="string", example="Constructor A"),
-     *             @OA\Property(property="Pais", type="string", example="Pais A")
-     *         )
-     *     ),
-     *     @OA\Response(
-     *         response=201,
-     *         description="Successful operation"
-     *     )
-     * )
-     */
     public function store(Request $request)
     {
-        $constructor = Constructor::create($request->all());
-        return response()->json($constructor, 201);
+        try {
+            $this->validate($request, [
+                'Nombre' => 'required|string|max:255',
+                'Pais' => 'required|string|max:255',
+            ]);
+
+            $constructor = Constructor::create($request->all());
+            return response()->json($constructor, 201);
+        } catch (ValidationException $e) {
+            return response()->json(['error' => $e->errors()], 422);
+        } catch (\Exception $e) {
+            Log::error('Error creating constructor: ' . $e->getMessage());
+            return response()->json(['error' => 'Error creating constructor'], 500);
+        }
     }
 
-    /**
-     * @OA\Get(
-     *     path="/api/constructores/{id}",
-     *     summary="Get constructor by ID",
-     *     @OA\Parameter(
-     *         name="id",
-     *         in="path",
-     *         required=true,
-     *         @OA\Schema(type="integer")
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Successful operation"
-     *     )
-     * )
-     */
     public function show($id)
     {
-        return Constructor::findOrFail($id);
+        try {
+            $constructor = Constructor::findOrFail($id);
+            return response()->json($constructor, 200);
+        } catch (ModelNotFoundException $e) {
+            return response()->json(['error' => 'Constructor not found'], 404);
+        } catch (\Exception $e) {
+            Log::error('Error fetching constructor: ' . $e->getMessage());
+            return response()->json(['error' => 'Error fetching constructor'], 500);
+        }
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
-    public function edit(string $id)
-    {
-        //
-    }
-
-    /**
-     * @OA\Put(
-     *     path="/api/constructores/{id}",
-     *     summary="Update constructor by ID",
-     *     @OA\Parameter(
-     *         name="id",
-     *         in="path",
-     *         required=true,
-     *         @OA\Schema(type="integer")
-     *     ),
-     *     @OA\RequestBody(
-     *         required=true,
-     *         @OA\JsonContent(
-     *             required={"Nombre", "Pais"},
-     *             @OA\Property(property="Nombre", type="string", example="Constructor A"),
-     *             @OA\Property(property="Pais", type="string", example="Pais A")
-     *         )
-     *     ),
-     *     @OA\Response(
-     *         response=200,
-     *         description="Successful operation"
-     *     )
-     * )
-     */
     public function update(Request $request, $id)
     {
-        $constructor = Constructor::findOrFail($id);
-        $constructor->update($request->all());
-        return response()->json($constructor, 200);
+        try {
+            $this->validate($request, [
+                'Nombre' => 'sometimes|required|string|max:255',
+                'Pais' => 'sometimes|required|string|max:255',
+            ]);
+
+            $constructor = Constructor::findOrFail($id);
+            $constructor->update($request->all());
+            return response()->json($constructor, 200);
+        } catch (ValidationException $e) {
+            return response()->json(['error' => $e->errors()], 422);
+        } catch (ModelNotFoundException $e) {
+            return response()->json(['error' => 'Constructor not found'], 404);
+        } catch (\Exception $e) {
+            Log::error('Error updating constructor: ' . $e->getMessage());
+            return response()->json(['error' => 'Error updating constructor'], 500);
+        }
     }
 
-    /**
-     * @OA\Delete(
-     *     path="/api/constructores/{id}",
-     *     summary="Delete constructor by ID",
-     *     @OA\Parameter(
-     *         name="id",
-     *         in="path",
-     *         required=true,
-     *         @OA\Schema(type="integer")
-     *     ),
-     *     @OA\Response(
-     *         response=204,
-     *         description="Successful operation"
-     *     )
-     * )
-     */
     public function destroy($id)
     {
-        Constructor::destroy($id);
-        return response()->json(null, 204);
+        try {
+            $constructor = Constructor::findOrFail($id);
+            $constructor->delete();
+            return response()->json(null, 204);
+        } catch (ModelNotFoundException $e) {
+            return response()->json(['error' => 'Constructor not found'], 404);
+        } catch (\Exception $e) {
+            Log::error('Error deleting constructor: ' . $e->getMessage());
+            return response()->json(['error' => 'Error deleting constructor'], 500);
+        }
     }
 }

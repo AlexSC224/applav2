@@ -8,6 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 class EventoEspecial extends Model
 {
     use HasFactory;
+    
+    // Especificar el nombre de la tabla en la base de datos
+    protected $table = 'eventos_especiales';
 
     protected $fillable = ['Nombre', 'Fecha', 'Descripcion'];
 

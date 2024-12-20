@@ -12,6 +12,7 @@ class PuntoController extends Controller
      * @OA\Get(
      *     path="/api/puntos",
      *     summary="Get list of puntos",
+     *       tags={"puntos"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -35,6 +36,7 @@ class PuntoController extends Controller
      * @OA\Post(
      *     path="/api/puntos",
      *     summary="Create a new punto",
+     *       tags={"puntos"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -59,6 +61,7 @@ class PuntoController extends Controller
      * @OA\Get(
      *     path="/api/puntos/{id}",
      *     summary="Get punto by ID",
+     *       tags={"puntos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -88,6 +91,7 @@ class PuntoController extends Controller
      * @OA\Put(
      *     path="/api/puntos/{id}",
      *     summary="Update punto by ID",
+     *       tags={"puntos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -119,6 +123,7 @@ class PuntoController extends Controller
      * @OA\Delete(
      *     path="/api/puntos/{id}",
      *     summary="Delete punto by ID",
+     *       tags={"puntos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

@@ -8,6 +8,9 @@
     "paths": {
         "/api/autos": {
             "get": {
+                "tags": [
+                    "Autos"
+                ],
                 "summary": "Get list of autos",
                 "operationId": "779873266044adce068514df6f023ec5",
                 "responses": {
@@ -17,6 +20,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "Autos"
+                ],
                 "summary": "Create a new auto",
                 "operationId": "3775832f6b13251c20a7e79e3d7b61c9",
                 "requestBody": {
@@ -62,6 +68,9 @@
         },
         "/api/autos/{id}": {
             "get": {
+                "tags": [
+                    "Autos"
+                ],
                 "summary": "Get auto by ID",
                 "operationId": "1be087abed0ba160d1479ce6f78168b3",
                 "parameters": [
@@ -81,6 +90,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "Autos"
+                ],
                 "summary": "Update auto by ID",
                 "operationId": "7a7f900b210d60721c4cf9b02b94d2b2",
                 "parameters": [
@@ -134,6 +146,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "Autos"
+                ],
                 "summary": "Delete auto by ID",
                 "operationId": "ebf42d58970816527f1e8fc42f8c811d",
                 "parameters": [
@@ -155,6 +170,9 @@
         },
         "/api/campeonatos": {
             "get": {
+                "tags": [
+                    "campeonatos"
+                ],
                 "summary": "Get list of campeonatos",
                 "operationId": "b7ee36ca8c11af3c5847ec45cb6a32ed",
                 "responses": {
@@ -164,6 +182,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "campeonatos"
+                ],
                 "summary": "Create a new campeonato",
                 "operationId": "033bd5c0c9fc9432b9d796394926c50c",
                 "requestBody": {
@@ -199,6 +220,9 @@
         },
         "/api/campeonatos/{id}": {
             "get": {
+                "tags": [
+                    "campeonatos"
+                ],
                 "summary": "Get campeonato by ID",
                 "operationId": "45f94d7e250906803ddc44f89b5cbb47",
                 "parameters": [
@@ -218,6 +242,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "campeonatos"
+                ],
                 "summary": "Update campeonato by ID",
                 "operationId": "3b1155d7af60c30851b659d1f3422ed4",
                 "parameters": [
@@ -261,6 +288,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "campeonatos"
+                ],
                 "summary": "Delete campeonato by ID",
                 "operationId": "73d2098d04551a458b1db3cc231d349a",
                 "parameters": [
@@ -282,6 +312,9 @@
         },
         "/api/carreras": {
             "get": {
+                "tags": [
+                    "carreras"
+                ],
                 "summary": "Get list of carreras",
                 "operationId": "24f82a4261c194f035a7ad6c076d6e61",
                 "responses": {
@@ -291,6 +324,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "carreras"
+                ],
                 "summary": "Create a new carrera",
                 "operationId": "3430b5198844e6744484d7e1b441db8f",
                 "requestBody": {
@@ -337,6 +373,9 @@
         },
         "/api/carreras/{id}": {
             "get": {
+                "tags": [
+                    "carreras"
+                ],
                 "summary": "Get carrera by ID",
                 "operationId": "8a30939fbecca1a64e1dbcdb8a97d059",
                 "parameters": [
@@ -356,6 +395,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "carreras"
+                ],
                 "summary": "Update carrera by ID",
                 "operationId": "d40721a6b68ff4af3154939207cb3a1a",
                 "parameters": [
@@ -410,6 +452,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "carreras"
+                ],
                 "summary": "Delete carrera by ID",
                 "operationId": "cf5360ba43551c82c0a1d58246d97560",
                 "parameters": [
@@ -431,6 +476,9 @@
         },
         "/api/circuitos": {
             "get": {
+                "tags": [
+                    "circuitos"
+                ],
                 "summary": "Get list of circuitos",
                 "operationId": "56b7010805fec325ef3c243732596c82",
                 "responses": {
@@ -440,6 +488,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "circuitos"
+                ],
                 "summary": "Create a new circuito",
                 "operationId": "d06ba5b22fd79bdbbe9490b87a3ba2d3",
                 "requestBody": {
@@ -481,6 +532,9 @@
         },
         "/api/circuitos/{id}": {
             "get": {
+                "tags": [
+                    "circuitos"
+                ],
                 "summary": "Get circuito by ID",
                 "operationId": "58710e4f05637013355740aa274ad03d",
                 "parameters": [
@@ -500,6 +554,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "circuitos"
+                ],
                 "summary": "Update circuito by ID",
                 "operationId": "61c63912c8bec998dce727b996b9e0c5",
                 "parameters": [
@@ -549,6 +606,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "circuitos"
+                ],
                 "summary": "Delete circuito by ID",
                 "operationId": "c5c9f6a2df9384ca2194b0bea3948dd9",
                 "parameters": [
@@ -570,6 +630,9 @@
         },
         "/api/constructores": {
             "get": {
+                "tags": [
+                    "constructores"
+                ],
                 "summary": "Get list of constructores",
                 "operationId": "bdeefc3c1f53bd0d81b779e3dca2ac04",
                 "responses": {
@@ -579,6 +642,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "constructores"
+                ],
                 "summary": "Create a new constructor",
                 "operationId": "f81d932a6b141cac926b80cd641a349f",
                 "requestBody": {
@@ -614,6 +680,9 @@
         },
         "/api/constructores/{id}": {
             "get": {
+                "tags": [
+                    "constructores"
+                ],
                 "summary": "Get constructor by ID",
                 "operationId": "197d703bd7773130b195112b186f420b",
                 "parameters": [
@@ -633,6 +702,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "constructores"
+                ],
                 "summary": "Update constructor by ID",
                 "operationId": "c32a16eced62285f0addef722703d7a9",
                 "parameters": [
@@ -676,6 +748,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "constructores"
+                ],
                 "summary": "Delete constructor by ID",
                 "operationId": "05671a5669b63cee0f3043dedde6e4ee",
                 "parameters": [
@@ -697,6 +772,9 @@
         },
         "/api/equipos": {
             "get": {
+                "tags": [
+                    "equipos"
+                ],
                 "summary": "Get list of equipos",
                 "operationId": "70ebc1e663c58216e080e7eabfb8e4ee",
                 "responses": {
@@ -706,6 +784,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "equipos"
+                ],
                 "summary": "Create a new equipo",
                 "operationId": "1ee5d4a14f7fdc446bbbd3190be811a4",
                 "requestBody": {
@@ -752,6 +833,9 @@
         },
         "/api/equipos/{id}": {
             "get": {
+                "tags": [
+                    "equipos"
+                ],
                 "summary": "Get equipo by ID",
                 "operationId": "e742e91d88a55c992b79f577f9190e16",
                 "parameters": [
@@ -771,6 +855,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "equipos"
+                ],
                 "summary": "Update equipo by ID",
                 "operationId": "390a911ced30233503cb109419555673",
                 "parameters": [
@@ -825,6 +912,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "equipos"
+                ],
                 "summary": "Delete equipo by ID",
                 "operationId": "a5ddb3e8cd5f0d0b8fff9daa355fd57f",
                 "parameters": [
@@ -846,6 +936,9 @@
         },
         "/api/eventos-carreras": {
             "get": {
+                "tags": [
+                    "carreras"
+                ],
                 "summary": "Get list of eventos carreras",
                 "operationId": "2f4dee4b94d5a9e2337631b2f8ac8840",
                 "responses": {
@@ -855,6 +948,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "carreras"
+                ],
                 "summary": "Create a new evento carrera",
                 "operationId": "c7a9d39e784d500c31a386644dce93ed",
                 "requestBody": {
@@ -890,6 +986,9 @@
         },
         "/api/eventos-carreras/{id}": {
             "get": {
+                "tags": [
+                    "carreras"
+                ],
                 "summary": "Get evento carrera by ID",
                 "operationId": "a69c9bf5ee78f2312b125d757b1117e2",
                 "parameters": [
@@ -909,6 +1008,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "carreras"
+                ],
                 "summary": "Update evento carrera by ID",
                 "operationId": "c23379ccb2af63c7524e4e7d0808d1eb",
                 "parameters": [
@@ -954,6 +1056,9 @@
         },
         "/api/eventos-especiales": {
             "get": {
+                "tags": [
+                    "eventos especiales"
+                ],
                 "summary": "Get list of eventos especiales",
                 "operationId": "af991f8a772bb0f42ecd78edefad27fe",
                 "responses": {
@@ -963,6 +1068,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "eventos especiales"
+                ],
                 "summary": "Create a new evento especial",
                 "operationId": "b25fc4a5f3b7a378138fec3703eac26f",
                 "requestBody": {
@@ -1004,6 +1112,9 @@
         },
         "/api/eventos-especiales/{id}": {
             "get": {
+                "tags": [
+                    "eventos especiales"
+                ],
                 "summary": "Get evento especial by ID",
                 "operationId": "2c19e5b52965357a720055bf78972808",
                 "parameters": [
@@ -1023,6 +1134,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "eventos especiales"
+                ],
                 "summary": "Update evento especial by ID",
                 "operationId": "1ee176deadb19b292d974ab3275592bf",
                 "parameters": [
@@ -1072,6 +1186,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "eventos especiales"
+                ],
                 "summary": "Delete evento especial by ID",
                 "operationId": "561b4dfc918e8a506c4f9e574a50180b",
                 "parameters": [
@@ -1093,6 +1210,9 @@
         },
         "/api/historial-de-cambios": {
             "get": {
+                "tags": [
+                    "historial de cambios"
+                ],
                 "summary": "Get list of historial de cambios",
                 "operationId": "df2b458a72fdd66fd9fcfa9acade84dc",
                 "responses": {
@@ -1102,6 +1222,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "historial de cambios"
+                ],
                 "summary": "Create a new historial de cambio",
                 "operationId": "b79967f4b9f058f11a664d6e219d1783",
                 "requestBody": {
@@ -1153,6 +1276,9 @@
         },
         "/api/historial-de-cambios/{id}": {
             "get": {
+                "tags": [
+                    "historial de cambios"
+                ],
                 "summary": "Get historial de cambio by ID",
                 "operationId": "6265fe34fe33a839dfbadf608e1e187a",
                 "parameters": [
@@ -1172,6 +1298,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "historial de cambios"
+                ],
                 "summary": "Update historial de cambio by ID",
                 "operationId": "6c9ae6aa13e2e5d334245384120c5cc9",
                 "parameters": [
@@ -1231,6 +1360,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "historial de cambios"
+                ],
                 "summary": "Delete historial de cambio by ID",
                 "operationId": "aa80b118013ba88adefb6c122bcdf36e",
                 "parameters": [
@@ -1252,6 +1384,9 @@
         },
         "/api/patrocinadores": {
             "get": {
+                "tags": [
+                    "patrocinadores"
+                ],
                 "summary": "Get list of patrocinadores",
                 "operationId": "f4426c122de166085a16ffdbc2d80037",
                 "responses": {
@@ -1261,6 +1396,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "patrocinadores"
+                ],
                 "summary": "Create a new patrocinador",
                 "operationId": "89d7d3a6e75517c45838dd68ce0c5836",
                 "requestBody": {
@@ -1296,6 +1434,9 @@
         },
         "/api/patrocinadores/{id}": {
             "get": {
+                "tags": [
+                    "patrocinadores"
+                ],
                 "summary": "Get patrocinador by ID",
                 "operationId": "c107259abf7ee2ac7331219d0d42e079",
                 "parameters": [
@@ -1315,6 +1456,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "patrocinadores"
+                ],
                 "summary": "Update patrocinador by ID",
                 "operationId": "0505b409e9322da765ec99c92e8a8a57",
                 "parameters": [
@@ -1358,6 +1502,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "patrocinadores"
+                ],
                 "summary": "Delete patrocinador by ID",
                 "operationId": "24b562e2d4281433e72db197ed8fbfdc",
                 "parameters": [
@@ -1379,6 +1526,9 @@
         },
         "/api/patrocinios": {
             "get": {
+                "tags": [
+                    "patrocinios"
+                ],
                 "summary": "Get list of patrocinios",
                 "operationId": "210c9aab30ea4c0d455d2a15fe4d3eb7",
                 "responses": {
@@ -1388,6 +1538,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "patrocinios"
+                ],
                 "summary": "Create a new patrocinio",
                 "operationId": "49644b7f00148d9a5bcfd6c3cbcd2cdc",
                 "requestBody": {
@@ -1435,6 +1588,9 @@
         },
         "/api/patrocinios/{id}": {
             "get": {
+                "tags": [
+                    "patrocinios"
+                ],
                 "summary": "Get patrocinio by ID",
                 "operationId": "1b61622ccc44908090b2d5aa324b9eb5",
                 "parameters": [
@@ -1454,6 +1610,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "patrocinios"
+                ],
                 "summary": "Update patrocinio by ID",
                 "operationId": "bba302101499d7e4f29a40d90d9b94f2",
                 "parameters": [
@@ -1509,6 +1668,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "patrocinios"
+                ],
                 "summary": "Delete patrocinio by ID",
                 "operationId": "b1d6085d7bfe36772297bc0cf07af029",
                 "parameters": [
@@ -1530,6 +1692,9 @@
         },
         "/api/personal": {
             "get": {
+                "tags": [
+                    "personal"
+                ],
                 "summary": "Get list of personal",
                 "operationId": "b06eb1dcbe33c370fd8757aa138dbec7",
                 "responses": {
@@ -1539,6 +1704,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "personal"
+                ],
                 "summary": "Create a new personal",
                 "operationId": "af3f4872a7d605eba5bb92df50691518",
                 "requestBody": {
@@ -1579,6 +1747,9 @@
         },
         "/api/personal/{id}": {
             "get": {
+                "tags": [
+                    "personal"
+                ],
                 "summary": "Get personal by ID",
                 "operationId": "88bd006eb75fd8592457a34b363e0c77",
                 "parameters": [
@@ -1598,6 +1769,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "personal"
+                ],
                 "summary": "Update personal by ID",
                 "operationId": "c1591b29f8695dd29d077f815e3304eb",
                 "parameters": [
@@ -1646,6 +1820,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "personal"
+                ],
                 "summary": "Delete personal by ID",
                 "operationId": "7a6119e00ca786bb540f3c9c6787026b",
                 "parameters": [
@@ -1667,6 +1844,9 @@
         },
         "/api/pilotos": {
             "get": {
+                "tags": [
+                    "pilotos"
+                ],
                 "summary": "Get list of pilotos",
                 "operationId": "499d47088082c9c7c898e6efd0e78799",
                 "responses": {
@@ -1676,6 +1856,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "pilotos"
+                ],
                 "summary": "Create a new piloto",
                 "operationId": "10a298ab55b9dba9c2938701e43a7ca5",
                 "requestBody": {
@@ -1722,6 +1905,9 @@
         },
         "/api/pilotos/{id}": {
             "get": {
+                "tags": [
+                    "pilotos"
+                ],
                 "summary": "Get piloto by ID",
                 "operationId": "8fc3ee594afb9695e7c0c2e2156d9ed6",
                 "parameters": [
@@ -1741,6 +1927,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "pilotos"
+                ],
                 "summary": "Update piloto by ID",
                 "operationId": "aa4e43062a291c860e18c348570586b9",
                 "parameters": [
@@ -1795,6 +1984,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "pilotos"
+                ],
                 "summary": "Delete piloto by ID",
                 "operationId": "107a1a81ae0e8692c06a1443f00dd0ed",
                 "parameters": [
@@ -1816,6 +2008,9 @@
         },
         "/api/puntos": {
             "get": {
+                "tags": [
+                    "puntos"
+                ],
                 "summary": "Get list of puntos",
                 "operationId": "7478a3dd0eeee60258baa83dfa21915c",
                 "responses": {
@@ -1825,6 +2020,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "puntos"
+                ],
                 "summary": "Create a new punto",
                 "operationId": "92295c3ea74eb9490fbff2c117017d16",
                 "requestBody": {
@@ -1860,6 +2058,9 @@
         },
         "/api/puntos/{id}": {
             "get": {
+                "tags": [
+                    "puntos"
+                ],
                 "summary": "Get punto by ID",
                 "operationId": "d9eb99d147cbbde81781319782c82e5b",
                 "parameters": [
@@ -1879,6 +2080,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "puntos"
+                ],
                 "summary": "Update punto by ID",
                 "operationId": "f722acb63257774327b17d14c42dc48d",
                 "parameters": [
@@ -1922,6 +2126,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "puntos"
+                ],
                 "summary": "Delete punto by ID",
                 "operationId": "529d7cfae17f06accd74413df5b5386d",
                 "parameters": [
@@ -1943,6 +2150,9 @@
         },
         "/api/resultados": {
             "get": {
+                "tags": [
+                    "resultados"
+                ],
                 "summary": "Get list of resultados",
                 "operationId": "7b2ac920f340e09c01176d7f7f7adbae",
                 "responses": {
@@ -1952,6 +2162,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "resultados"
+                ],
                 "summary": "Create a new resultado",
                 "operationId": "281025e32af14ffaecbe661da3587ac4",
                 "requestBody": {
@@ -2008,6 +2221,9 @@
         },
         "/api/resultados/{id}": {
             "get": {
+                "tags": [
+                    "resultados"
+                ],
                 "summary": "Get resultado by ID",
                 "operationId": "f510479c2f9c0bd5e379e8f10686df58",
                 "parameters": [
@@ -2030,6 +2246,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "resultados"
+                ],
                 "summary": "Update an existing resultado",
                 "operationId": "154255326ab56bbeb04f1626ae3080e2",
                 "parameters": [
@@ -2097,6 +2316,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "resultados"
+                ],
                 "summary": "Delete a resultado",
                 "operationId": "1ad7de4b3e6c94f79a4ed22745631240",
                 "parameters": [
@@ -2121,6 +2343,9 @@
         },
         "/api/roles": {
             "get": {
+                "tags": [
+                    "roles"
+                ],
                 "summary": "Get list of roles",
                 "operationId": "bf78d43aa8b5c576b78b08b73c404cb6",
                 "responses": {
@@ -2130,6 +2355,9 @@
                 }
             },
             "post": {
+                "tags": [
+                    "roles"
+                ],
                 "summary": "Create a new rol",
                 "operationId": "19029466a195a478441990551cb1e8c9",
                 "requestBody": {
@@ -2160,6 +2388,9 @@
         },
         "/api/roles/{id}": {
             "get": {
+                "tags": [
+                    "roles"
+                ],
                 "summary": "Get rol by ID",
                 "operationId": "bcca3423f39b15abd0d0214dd6169f3c",
                 "parameters": [
@@ -2179,6 +2410,9 @@
                 }
             },
             "put": {
+                "tags": [
+                    "roles"
+                ],
                 "summary": "Update rol by ID",
                 "operationId": "0444e2e7859bbaa81749d090c06415a1",
                 "parameters": [
@@ -2217,6 +2451,9 @@
                 }
             },
             "delete": {
+                "tags": [
+                    "roles"
+                ],
                 "summary": "Delete rol by ID",
                 "operationId": "de55f66883ee7b0d98d50e5e82e94f7e",
                 "parameters": [
@@ -2236,5 +2473,67 @@
                 }
             }
         }
-    }
+    },
+    "tags": [
+        {
+            "name": "Autos",
+            "description": "Autos"
+        },
+        {
+            "name": "campeonatos",
+            "description": "campeonatos"
+        },
+        {
+            "name": "carreras",
+            "description": "carreras"
+        },
+        {
+            "name": "circuitos",
+            "description": "circuitos"
+        },
+        {
+            "name": "constructores",
+            "description": "constructores"
+        },
+        {
+            "name": "equipos",
+            "description": "equipos"
+        },
+        {
+            "name": "eventos especiales",
+            "description": "eventos especiales"
+        },
+        {
+            "name": "historial de cambios",
+            "description": "historial de cambios"
+        },
+        {
+            "name": "patrocinadores",
+            "description": "patrocinadores"
+        },
+        {
+            "name": "patrocinios",
+            "description": "patrocinios"
+        },
+        {
+            "name": "personal",
+            "description": "personal"
+        },
+        {
+            "name": "pilotos",
+            "description": "pilotos"
+        },
+        {
+            "name": "puntos",
+            "description": "puntos"
+        },
+        {
+            "name": "resultados",
+            "description": "resultados"
+        },
+        {
+            "name": "roles",
+            "description": "roles"
+        }
+    ]
 }

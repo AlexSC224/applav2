@@ -12,6 +12,7 @@ class EventoEspecialController extends Controller
      * @OA\Get(
      *     path="/api/eventos-especiales",
      *     summary="Get list of eventos especiales",
+     *      tags={"eventos especiales"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -27,6 +28,7 @@ class EventoEspecialController extends Controller
      * @OA\Post(
      *     path="/api/eventos-especiales",
      *     summary="Create a new evento especial",
+     *      tags={"eventos especiales"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -52,6 +54,7 @@ class EventoEspecialController extends Controller
      * @OA\Get(
      *     path="/api/eventos-especiales/{id}",
      *     summary="Get evento especial by ID",
+     *      tags={"eventos especiales"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -73,6 +76,7 @@ class EventoEspecialController extends Controller
      * @OA\Put(
      *     path="/api/eventos-especiales/{id}",
      *     summary="Update evento especial by ID",
+     *      tags={"eventos especiales"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -105,6 +109,7 @@ class EventoEspecialController extends Controller
      * @OA\Delete(
      *     path="/api/eventos-especiales/{id}",
      *     summary="Delete evento especial by ID",
+     *      tags={"eventos especiales"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

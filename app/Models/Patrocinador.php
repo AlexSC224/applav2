@@ -9,6 +9,8 @@ class Patrocinador extends Model
 {
     use HasFactory;
 
+    protected $table = 'patrocinadores';
+
     protected $fillable = ['Nombre', 'Pais'];
 
     public function patrocinios()

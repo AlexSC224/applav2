@@ -12,6 +12,7 @@ class PilotoController extends Controller
      * @OA\Get(
      *     path="/api/pilotos",
      *     summary="Get list of pilotos",
+     *      tags={"pilotos"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -27,6 +28,7 @@ class PilotoController extends Controller
      * @OA\Post(
      *     path="/api/pilotos",
      *     summary="Create a new piloto",
+     *       tags={"pilotos"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -53,6 +55,7 @@ class PilotoController extends Controller
      * @OA\Get(
      *     path="/api/pilotos/{id}",
      *     summary="Get piloto by ID",
+     *       tags={"pilotos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -74,6 +77,7 @@ class PilotoController extends Controller
      * @OA\Put(
      *     path="/api/pilotos/{id}",
      *     summary="Update piloto by ID",
+     *       tags={"pilotos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -107,6 +111,7 @@ class PilotoController extends Controller
      * @OA\Delete(
      *     path="/api/pilotos/{id}",
      *     summary="Delete piloto by ID",
+     *       tags={"pilotos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

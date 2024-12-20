@@ -12,6 +12,7 @@ class PatrocinioController extends Controller
      * @OA\Get(
      *     path="/api/patrocinios",
      *     summary="Get list of patrocinios",
+     *       tags={"patrocinios"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -35,6 +36,7 @@ class PatrocinioController extends Controller
      * @OA\Post(
      *     path="/api/patrocinios",
      *     summary="Create a new patrocinio",
+     *      tags={"patrocinios"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -61,6 +63,7 @@ class PatrocinioController extends Controller
      * @OA\Get(
      *     path="/api/patrocinios/{id}",
      *     summary="Get patrocinio by ID",
+     *      tags={"patrocinios"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -90,6 +93,7 @@ class PatrocinioController extends Controller
      * @OA\Put(
      *     path="/api/patrocinios/{id}",
      *     summary="Update patrocinio by ID",
+     *      tags={"patrocinios"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -123,6 +127,7 @@ class PatrocinioController extends Controller
      * @OA\Delete(
      *     path="/api/patrocinios/{id}",
      *     summary="Delete patrocinio by ID",
+     *      tags={"patrocinios"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

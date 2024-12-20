@@ -25,6 +25,7 @@ use App\Http\Controllers\RolController;
 use App\Http\Controllers\HistorialDeCambioController;
 use App\Http\Controllers\EventoEspecialController;
 use App\Http\Controllers\EventoCarreraController;
+use App\Http\Controllers\CircuitoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -61,6 +62,7 @@ Route::apiResource('roles', RolController::class);
 Route::apiResource('historial-de-cambios', HistorialDeCambioController::class);
 Route::apiResource('eventos-especiales', EventoEspecialController::class);
 Route::apiResource('eventos-carreras', EventoCarreraController::class);
+Route::apiResource('circuitos', CircuitoController::class);
 
 
 

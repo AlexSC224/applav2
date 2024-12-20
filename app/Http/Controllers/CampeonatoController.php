@@ -11,6 +11,7 @@ class CampeonatoController extends Controller
      * @OA\Get(
      *     path="/api/campeonatos",
      *     summary="Get list of campeonatos",
+     *      tags={"campeonatos"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -26,6 +27,7 @@ class CampeonatoController extends Controller
      * @OA\Post(
      *     path="/api/campeonatos",
      *     summary="Create a new campeonato",
+     *     tags={"campeonatos"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -50,6 +52,7 @@ class CampeonatoController extends Controller
      * @OA\Get(
      *     path="/api/campeonatos/{id}",
      *     summary="Get campeonato by ID",
+     *     tags={"campeonatos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -71,6 +74,7 @@ class CampeonatoController extends Controller
      * @OA\Put(
      *     path="/api/campeonatos/{id}",
      *     summary="Update campeonato by ID",
+     *      tags={"campeonatos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -102,6 +106,7 @@ class CampeonatoController extends Controller
      * @OA\Delete(
      *     path="/api/campeonatos/{id}",
      *     summary="Delete campeonato by ID",
+     *      tags={"campeonatos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

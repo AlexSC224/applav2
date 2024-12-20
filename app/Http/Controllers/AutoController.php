@@ -11,6 +11,7 @@ class AutoController extends Controller
      * @OA\Get(
      *     path="/api/autos",
      *     summary="Get list of autos",
+     *     tags={"Autos"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -26,6 +27,7 @@ class AutoController extends Controller
      * @OA\Post(
      *     path="/api/autos",
      *     summary="Create a new auto",
+     * tags={"Autos"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -52,6 +54,7 @@ class AutoController extends Controller
      * @OA\Get(
      *     path="/api/autos/{id}",
      *     summary="Get auto by ID",
+     *     tags={"Autos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -73,6 +76,7 @@ class AutoController extends Controller
      * @OA\Put(
      *     path="/api/autos/{id}",
      *     summary="Update auto by ID",
+     * tags={"Autos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -106,6 +110,7 @@ class AutoController extends Controller
      * @OA\Delete(
      *     path="/api/autos/{id}",
      *     summary="Delete auto by ID",
+     * tags={"Autos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

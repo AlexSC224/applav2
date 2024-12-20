@@ -12,6 +12,7 @@ class PatrocinadorController extends Controller
      * @OA\Get(
      *     path="/api/patrocinadores",
      *     summary="Get list of patrocinadores",
+     *      tags={"patrocinadores"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -35,6 +36,7 @@ class PatrocinadorController extends Controller
      * @OA\Post(
      *     path="/api/patrocinadores",
      *     summary="Create a new patrocinador",
+     *       tags={"patrocinadores"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -59,6 +61,7 @@ class PatrocinadorController extends Controller
      * @OA\Get(
      *     path="/api/patrocinadores/{id}",
      *     summary="Get patrocinador by ID",
+     *       tags={"patrocinadores"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -88,6 +91,7 @@ class PatrocinadorController extends Controller
      * @OA\Put(
      *     path="/api/patrocinadores/{id}",
      *     summary="Update patrocinador by ID",
+     *       tags={"patrocinadores"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -119,6 +123,7 @@ class PatrocinadorController extends Controller
      * @OA\Delete(
      *     path="/api/patrocinadores/{id}",
      *     summary="Delete patrocinador by ID",
+     *       tags={"patrocinadores"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

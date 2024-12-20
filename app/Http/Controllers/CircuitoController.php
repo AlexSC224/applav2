@@ -12,6 +12,7 @@ class CircuitoController extends Controller
      * @OA\Get(
      *     path="/api/circuitos",
      *     summary="Get list of circuitos",
+     *     tags={"circuitos"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -35,6 +36,7 @@ class CircuitoController extends Controller
      * @OA\Post(
      *     path="/api/circuitos",
      *     summary="Create a new circuito",
+     *      tags={"circuitos"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -60,6 +62,7 @@ class CircuitoController extends Controller
      * @OA\Get(
      *     path="/api/circuitos/{id}",
      *     summary="Get circuito by ID",
+     *      tags={"circuitos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -89,6 +92,7 @@ class CircuitoController extends Controller
      * @OA\Put(
      *     path="/api/circuitos/{id}",
      *     summary="Update circuito by ID",
+     *      tags={"circuitos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -121,6 +125,7 @@ class CircuitoController extends Controller
      * @OA\Delete(
      *     path="/api/circuitos/{id}",
      *     summary="Delete circuito by ID",
+     *      tags={"circuitos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

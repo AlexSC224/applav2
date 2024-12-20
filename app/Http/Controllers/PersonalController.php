@@ -12,6 +12,7 @@ class PersonalController extends Controller
      * @OA\Get(
      *     path="/api/personal",
      *     summary="Get list of personal",
+     *      tags={"personal"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -27,6 +28,7 @@ class PersonalController extends Controller
      * @OA\Post(
      *     path="/api/personal",
      *     summary="Create a new personal",
+     *      tags={"personal"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -52,6 +54,7 @@ class PersonalController extends Controller
      * @OA\Get(
      *     path="/api/personal/{id}",
      *     summary="Get personal by ID",
+     *      tags={"personal"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -73,6 +76,7 @@ class PersonalController extends Controller
      * @OA\Put(
      *     path="/api/personal/{id}",
      *     summary="Update personal by ID",
+     *      tags={"personal"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -105,6 +109,7 @@ class PersonalController extends Controller
      * @OA\Delete(
      *     path="/api/personal/{id}",
      *     summary="Delete personal by ID",
+     *      tags={"personal"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

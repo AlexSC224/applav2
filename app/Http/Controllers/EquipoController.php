@@ -12,6 +12,7 @@ class EquipoController extends Controller
      * @OA\Get(
      *     path="/api/equipos",
      *     summary="Get list of equipos",
+     *      tags={"equipos"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -27,6 +28,7 @@ class EquipoController extends Controller
      * @OA\Post(
      *     path="/api/equipos",
      *     summary="Create a new equipo",
+     *      tags={"equipos"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -53,6 +55,7 @@ class EquipoController extends Controller
      * @OA\Get(
      *     path="/api/equipos/{id}",
      *     summary="Get equipo by ID",
+     *      tags={"equipos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -74,6 +77,7 @@ class EquipoController extends Controller
      * @OA\Put(
      *     path="/api/equipos/{id}",
      *     summary="Update equipo by ID",
+     *      tags={"equipos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -107,6 +111,7 @@ class EquipoController extends Controller
      * @OA\Delete(
      *     path="/api/equipos/{id}",
      *     summary="Delete equipo by ID",
+     *      tags={"equipos"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

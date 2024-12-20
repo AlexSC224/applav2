@@ -12,6 +12,7 @@ class RolController extends Controller
      * @OA\Get(
      *     path="/api/roles",
      *     summary="Get list of roles",
+     *      tags={"roles"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -35,6 +36,7 @@ class RolController extends Controller
      * @OA\Post(
      *     path="/api/roles",
      *     summary="Create a new rol",
+     *      tags={"roles"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -58,6 +60,7 @@ class RolController extends Controller
      * @OA\Get(
      *     path="/api/roles/{id}",
      *     summary="Get rol by ID",
+     *      tags={"roles"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -87,6 +90,7 @@ class RolController extends Controller
      * @OA\Put(
      *     path="/api/roles/{id}",
      *     summary="Update rol by ID",
+     *      tags={"roles"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -117,6 +121,7 @@ class RolController extends Controller
      * @OA\Delete(
      *     path="/api/roles/{id}",
      *     summary="Delete rol by ID",
+     *      tags={"roles"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",

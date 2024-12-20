@@ -12,6 +12,7 @@ class EventoCarreraController extends Controller
      * @OA\Get(
      *     path="/api/eventos-carreras",
      *     summary="Get list of eventos carreras",
+     *      tags={"carreras"},
      *     @OA\Response(
      *         response=200,
      *         description="Successful operation"
@@ -27,6 +28,7 @@ class EventoCarreraController extends Controller
      * @OA\Post(
      *     path="/api/eventos-carreras",
      *     summary="Create a new evento carrera",
+     *      tags={"carreras"},
      *     @OA\RequestBody(
      *         required=true,
      *         @OA\JsonContent(
@@ -51,6 +53,7 @@ class EventoCarreraController extends Controller
      * @OA\Get(
      *     path="/api/eventos-carreras/{id}",
      *     summary="Get evento carrera by ID",
+     *      tags={"carreras"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
@@ -72,6 +75,7 @@ class EventoCarreraController extends Controller
      * @OA\Put(
      *     path="/api/eventos-carreras/{id}",
      *     summary="Update evento carrera by ID",
+     *      tags={"carreras"},
      *     @OA\Parameter(
      *         name="id",
      *         in="path",
